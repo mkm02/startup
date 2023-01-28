@@ -11,6 +11,8 @@ Imagine a social media page that was useful, productive, and dealt with everybod
 
 Guero Recipes is the perfect social media platform to find, save, and share remarkable recipes. Sort by categories to find they style you desire, and clickly find recipes that catch your eye. When you find one that appeals to you -- and we are sure you will -- like it to save to your favorite recipes that stay every time you log in! Comment to share your thoughts with others, and share the link to a friend or loved one. With Guero Recipes, you are sure to liven up your palatte!
 
+**Images** -> [StartUp Mock [CS 260].pdf](https://github.com/mkm02/startup/files/10524303/StartUp.Mock.CS.260.pdf)
+
 ***Key Features***
 
 - Text and image links to recipes
