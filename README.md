@@ -1,8 +1,26 @@
 # startup
 Repository for CS 260 start up application.
 
-This is where I will put notes as I create my startup application!
+The application is a social media recipe website!
 
-The application is: **TBD**
+# Recipe Website
+
+***Elevator Pitch***
+
+Imagine a social media page that was useful, productive, and dealt with everybody's favorite pasttime... **eating**!
+
+Guero Recipes is the perfect social media platform to find, save, and share remarkable recipes. Sort by categories to find they style you desire, and clickly find recipes that catch your eye. When you find one that appeals to you -- and we are sure you will -- like it to save to your favorite recipes that stay every time you log in! Comment to share your thoughts with others, and share the link to a friend or loved one. With Guero Recipes, you are sure to liven up your palatte!
+
+***Key Features***
+
+- Text and image links to recipes
+- Drop down navigation bar buttons
+- Sort by recipe category
+- Login capabilities
+- Save favorites to profile
+- Public comment sections
+- Copy sharable link to clipboard
+
+***Notes***
 
 Pushing and pulling in the development environment is incredibly important to do **frequently**. It will also require coordination and communication with others to fix merge issues in the workplace.
