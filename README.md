@@ -4,6 +4,9 @@ Repository for CS 260 start up application.
 The application is a social media recipe website!
 
 **AWS IP Address**: http://13.58.166.220/
+
+**AWS DNS**: guerosite.click
+
 SSH command: ssh -i [key file] ubuntu@3.142.133.174
 
 # Recipe Website
@@ -30,4 +33,4 @@ Guero Recipes is the perfect social media platform to find, save, and share rema
 
 Pushing and pulling in the development environment is incredibly important to do **frequently**. It will also require coordination and communication with others to fix merge issues in the workplace.
 
-
+NS type of domain record contains information of authoritative name servers that permit me to put records in this DNS server 
