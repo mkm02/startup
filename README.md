@@ -3,7 +3,7 @@ Repository for CS 260 start up application.
 
 The application is a social media recipe website!
 
-**AWS IP Address**: http://13.58.166.220/
+**AWS IP Address**: http://3.142.133.174/
 
 **AWS DNS**: guerosite.click
 
@@ -34,3 +34,5 @@ Guero Recipes is the perfect social media platform to find, save, and share rema
 Pushing and pulling in the development environment is incredibly important to do **frequently**. It will also require coordination and communication with others to fix merge issues in the workplace.
 
 NS type of domain record contains information of authoritative name servers that permit me to put records in this DNS server 
+
+While working on the html for Simon, I got more experience using proper syntax to create a table. I also learned than in a form there is an action that can be used. This is a clean way to navigate to a new page without a visible hyperlink. I also began to understand a little bit more about how svg can create more complex images.
