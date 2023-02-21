@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Güero Recipes</title>
+
+    <link rel="stylesheet" href="styles.css"/> 
+    <!-- Bootstrap CSS framework -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      crossorigin="anonymous"
+    />
+
   </head>
   <body> 
     <header>
       <div class="menubar">
         <div class="logo">
           <a href="index.html">
-            <div id = "logotext">Güero Recipes</div>
+            <div id="logotext">Güero Recipes</div>
           </a>
         </div>
 
@@ -26,9 +36,28 @@
 
       <div class="recipeheading">Recipes</div>
         
-      <a class="recipelink" href="Recipes/bbq_pork.html">BBQ Pork Sandwiches</a><br>
-      <a class="recipelink" href="Recipes/birria_tacos.html">Birria Tacos</a><br>
-      <a class="recipelink" href="Recipes/chicken_parm.html">Chicken Parmesan Casserole</a><br>
+      <div class="homediv">
+        <div class="spot1">
+          <a href="Recipes/bbq_pork.html">
+            <img class="homepic" id="bbqpork" src="Recipes/images/bbq-pork-sandwiches.jpg" alt="Cooked pork and coleslaw" ><br>
+          </a>
+          <a class="recipelink" href="Recipes/bbq_pork.html">BBQ Pork Sandwiches</a><br>
+        </div>
+
+        <div class="spot2">
+          <a href="Recipes/birria_tacos.html">
+            <img class="homepic" id="birria" src="Recipes/images/birria-tacos.jpg" alt="Birria tacos final product"><br>
+          </a>
+          <a class="recipelink" href="Recipes/birria_tacos.html">Birria Tacos</a><br>
+        </div> 
+
+        <div class="spot3">
+          <a href="Recipes/chicken_parm.html">
+            <img class="homepic" src="Recipes/images/Chicken-Parmesan-Casserole.jpg" alt="Chicken Parmesan Casserole finished product"><br>
+          </a>
+          <a class="recipelink" href="Recipes/chicken_parm.html">Chicken Parmesan Casserole</a><br>
+        </div>
+      </div>
     </main>
 
     <footer>

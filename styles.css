@@ -1,0 +1,211 @@
+* {
+    background-color: bisque;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#italian {
+    font-family: "Brush Script MT", "Verdana", sans-serif;
+    font: size 72px;
+    font-weight: 500;
+}
+
+#bbqpork {
+    object-position: -50% 40%;
+}
+
+#birria {
+    object-position: 0% 60%;
+}
+
+.menubar {
+    display: flex;
+    width: 100%;
+    margin: 0px 0px 0px -8px;
+    height: 90px;
+    background-color: rgb(100, 175, 237);
+    flex-direction: row;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+}
+
+.logo {
+    width: 250px;
+    height: 75px;
+    margin: 3px 30px 50px 9px;
+    border: solid;
+    border-radius: 8px;
+    border-width: 4px;
+    background-color: #f9f9f9;
+}
+
+#logotext {
+    font-size: 26px;
+    background-color: #f9f9f9;
+    font-weight: 600;
+    text-align: center;
+    padding-top: 22px;
+}
+
+.alloptions {
+    display: flex;
+    justify-content: flex-end; 
+    background-color: rgb(100, 175, 237);  
+}
+
+.login {
+    display: flex;
+    background-color: rgb(100, 175, 237);
+    color: lightgray;
+    font-size: 24px;
+    align-items: center;
+    margin-right: 20px;
+}
+.recipesoption {
+    display: flex;
+    background-color: rgb(100, 175, 237);
+    color: lightgray;
+    font-size: 24px;
+    align-items: center;
+    margin-right: 20px;
+}
+.aboutus {
+    display: flex;
+    background-color: rgb(100, 175, 237);
+    color: lightgray;
+    font-size: 24px;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.component {
+    font-family: "Helvetica", "Verdana", sans-serif;
+    font: size 48px;
+    font-weight: 500;
+}
+
+.name {
+    font-family: "Helvetica", "Verdana", sans-serif;
+    font: size 72px;
+    font-weight: 500;
+}
+
+.description {
+    font-family: "Helvetica", sans-serif;
+    font: size 56px;
+    font-weight: bolder;
+}
+
+.ingredients {
+    font-family: "Helvetica", sans-serif;
+    font: size 56px;
+    font-weight: bolder;
+}
+
+.steps {
+    font-family: "Helvetica", sans-serif;
+    font: size 56px;
+    font-weight: bolder;
+}
+
+.stepinfo{
+    font-weight: normal;
+}
+
+ol li {
+    font-weight: bold;
+    line-height: 1.6;
+}
+
+ul li {
+    line-height: 1.6;
+}
+
+.recipeheading {
+    margin-top: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 48px;
+    text-align: center;
+    font-weight: bolder;
+}
+
+.homepic {
+    height: 200px;
+    width: 250px;
+    object-fit:cover;
+    display: flex;
+    border: 4px solid black;
+    border-radius: 10% 25%;   
+    flex-basis: auto;
+    flex: 1;
+}
+
+.homepic:hover {
+    border: 5px solid rgb(100, 175, 237);
+}
+
+.homediv {
+    
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: nowrap;
+    flex-direction: row;
+    margin-top: 30px;
+}
+
+.spot1 {
+    width: 250px;
+    text-align: center;
+    
+}
+
+.spot2 {
+    width: 250px;
+    text-align: center;
+}
+
+.spot3 {
+    width: 250px;
+    text-align: center;
+}
+
+.recipelink {
+    display: flex;
+    justify-content: center;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.recipelink:hover { 
+    text-decoration: underline rgb(100, 175, 237);
+    text-decoration-thickness: 10%;
+
+}
+
+.headimage {
+    margin-top: 90px;
+    height: 400px;
+    border-bottom: solid black 2px;
+    width: 101%;
+    margin-left: -8px;
+}
+
+#landingimage {
+    background-image: url("pexels-lukas-952478.jpg"); 
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+
+}
+
+.button {
+    background-color: rgb(233, 233, 233);
+    padding: 2px;
+    border: dotted black 1px;
+    border-radius: 3px;
+}
