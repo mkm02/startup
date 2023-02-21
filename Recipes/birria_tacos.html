@@ -15,101 +15,116 @@
 
   </head>
   <body>
-    <header>
-      <div class="menubar">
-        <div class="logo">
-          <a href="../index.html">
-            <div id="logotext">Güero Recipes</div>
+    <header class="sticky-top">
+      <nav class="navbar navbar-expand-lg">
+        <menu class="container-fluid">
+          <a class="navbar-brand" href="../index.html">
+            Güero Recipes
           </a>
-        </div>
-
-        <div class="alloptions">
-          <div class="aboutus">About Us</div>
-          <div class="recipesoption">Recipes</div>
-          <div class="login">Login</div>
-        </div>
-      </div>
+          <button type="button" class="btn btn-secondary">About</button>
+          <div class="btn-group">
+            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Recipes</button>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="bbq_pork.html">BBQ Pork Sandwiches</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item active" href="birria_tacos.html">Birria Tacos</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="chicken_parm.html">Chicken Parmesan Casserole</a></li>
+            </ul>
+          </div>
+          <button type="button" class="btn btn-secondary">Login</button>
+        </menu>
+      </nav>
     </header>
 
     <main>
       <img src="images/birria-tacos.jpg" alt="Birria tacos final product">
       <h1 class="name">Birria Tacos</h1>
 
-      <h2 class="description">Description</h2>
-      <p>Have you ever wanted to have authentic, messy, delicious Mexican street tacos? Well look no further! These birria tacos will be the star of any fiesta! </p>
-      <p>Tacos de birria are a popular style of tacos in Mexico. Birria is a chuck roast stew braised in a variety of chiles and herbs and stock that goes perfectly with cheese,
-        cilantro, onions, and, of course, a tortilla!
-      </p>
+      <div class="recipe_container">
+        <h2 class="description">Description</h2>
+        <p>Have you ever wanted to have authentic, messy, delicious Mexican street tacos? Well look no further! These birria tacos will be the star of any fiesta! </p>
+        <p>Tacos de birria are a popular style of tacos in Mexico. Birria is a chuck roast stew braised in a variety of chiles and herbs and stock that goes perfectly with cheese,
+          cilantro, onions, and, of course, a tortilla!
+        </p>
+      </div>
 
-      <h2 class="ingredients">Ingredients</h2>
-      <h3 class="component">For the Stewed Meat</h3>
-      <ul>
-        <li>6 dried guajillo chiles (<i>stemmed and deseeded</i>)</li>
-        <li>4 dried ancho chiles (<i>stemmed and deseeded</i>)</li>
-        <li>3 lbs chuck roast (<i>cut into 4 chunks</i>)</li>
-        <li>Kosher salt (<i>to taste</i>)</li>
-        <li>Ground black pepper (<i>to taste</i>)</li>
-        <li>2 Tbsp vegetable oil</li>
-        <li>3 tomatoes (<i>quartered</i>)</li>
-        <li>1 white onion (<i>quartered</i>)</li>
-        <li>8 cloves garlic (<i>peeled and smashed</i>)</li>
-        <li>4 cups low sodium beef broth</li>
-        <li>1½ lbs bone-in short ribs</li>
-        <li>1 Tbsp ground coriander</li>
-        <li>2 tsp ground cumin</li>
-        <li>2 tsp dried oregano</li>
-        <li>1 tsp chili powder</li>
-        <li>1 cinnamon stick</li>
-        <li>½ cup orange juice</li>
-        <li>½ cup apple cider vinegar</li>
-      </ul>
+      <div class="recipe_container">
+        <h2 class="ingredients">Ingredients</h2>
+        <h3 class="component">For the Stewed Meat</h3>
+        <ul>
+          <li>6 dried guajillo chiles (<i>stemmed and deseeded</i>)</li>
+          <li>4 dried ancho chiles (<i>stemmed and deseeded</i>)</li>
+          <li>3 lbs chuck roast (<i>cut into 4 chunks</i>)</li>
+          <li>Kosher salt (<i>to taste</i>)</li>
+          <li>Ground black pepper (<i>to taste</i>)</li>
+          <li>2 Tbsp vegetable oil</li>
+          <li>3 tomatoes (<i>quartered</i>)</li>
+          <li>1 white onion (<i>quartered</i>)</li>
+          <li>8 cloves garlic (<i>peeled and smashed</i>)</li>
+          <li>4 cups low sodium beef broth</li>
+          <li>1½ lbs bone-in short ribs</li>
+          <li>1 Tbsp ground coriander</li>
+          <li>2 tsp ground cumin</li>
+          <li>2 tsp dried oregano</li>
+          <li>1 tsp chili powder</li>
+          <li>1 cinnamon stick</li>
+          <li>½ cup orange juice</li>
+          <li>½ cup apple cider vinegar</li>
+        </ul>
 
-      <h3 class="component">For the Tacos</h3>
-      <ul>
-        <li>15 corn tortillas</li>
-        <li>2 cups shredded Monterey Jack cheese</li>
-        <li>1 cup chopped yellow onion</li>
-        <li>½ cup fresh cilantro</li>
-        <li>Fresh lime wedges</li>
-      </ul>
+        <h3 class="component">For the Tacos</h3>
+        <ul>
+          <li>15 corn tortillas</li>
+          <li>2 cups shredded Monterey Jack cheese</li>
+          <li>1 cup chopped yellow onion</li>
+          <li>½ cup fresh cilantro</li>
+          <li>Fresh lime wedges</li>
+        </ul>
+      </div>
 
-      <h2 class="steps">Steps</h2>
-      <h3 class="component">For the Stewed Meat</h3>
-      <ol>
-        <li><span class="stepinfo">Place the Guajillo and Ancho chiles in a bowl full of near-boiling water. Allow the peppers to soak for at least 30 minutes.</span></li>
-        <li><span class="stepinfo">Heat 1 tablespoon of oil in a large Dutch oven set over medium-high heat. In 2 batches, sear the roast on all sides, using more oil as needed. 
-          Transfer the seared chuck roast to a plate and set aside.</span>
-        </li>
-        <li><span class="stepinfo">Add the remaining oil, tomatoes, onion, and garlic to the pot. Cook for 2-3 minutes.</span></li>
-        <li><span class="stepinfo">Pour in the beef broth to deglaze the pot.</span></li>
-        <li><span class="stepinfo">Transfer the hydrated chiles from the bowl of water to the pot. Add the short ribs, spices, and cinnamon stick.
-          Bring the mixture to a boil, reduce the heat, and maintain a gentle simmer for 30 minutes.</span>
-        </li>
-        <li><span class="stepinfo">Remove the short ribs and add to the plate with the seared roast. Skim the top of the pot to remove any impurities from the bone cooking out. 
-          Remove the cinnamon stick and discard. Transfer about 1½ - 2 cups of the braising liquid to a bowl. Cover the bowl and refrigerate.</span>
-        </li>
-        <li><span class="stepinfo">Use an immersion blender to blend the remaining pepper and tomato mixture until smooth.</span></li>
-        <li><span class="stepinfo">Return the short ribs, seared beef, and any juices back to the Dutch oven. Add the orange juice, apple cider vinegar, 
-          salt, and pepper to taste. Bring to a simmer, cover, reduce heat to medium-low, and cook for at least 3-4 hours.</span>
-        </li>
-        <li><span class="stepinfo">When the beef is cooked through, remove the short rib bones. Shred the meat with 2 forks.</span></li>
-      </ol>
+      <div class="recipe_container">
+        <h2 class="steps">Steps</h2>
+        <h3 class="component">For the Stewed Meat</h3>
+        <ol>
+          <li><span class="stepinfo">Place the Guajillo and Ancho chiles in a bowl full of near-boiling water. Allow the peppers to soak for at least 30 minutes.</span></li>
+          <li><span class="stepinfo">Heat 1 tablespoon of oil in a large Dutch oven set over medium-high heat. In 2 batches, sear the roast on all sides, using more oil as needed. 
+            Transfer the seared chuck roast to a plate and set aside.</span>
+          </li>
+          <li><span class="stepinfo">Add the remaining oil, tomatoes, onion, and garlic to the pot. Cook for 2-3 minutes.</span></li>
+          <li><span class="stepinfo">Pour in the beef broth to deglaze the pot.</span></li>
+          <li><span class="stepinfo">Transfer the hydrated chiles from the bowl of water to the pot. Add the short ribs, spices, and cinnamon stick.
+            Bring the mixture to a boil, reduce the heat, and maintain a gentle simmer for 30 minutes.</span>
+          </li>
+          <li><span class="stepinfo">Remove the short ribs and add to the plate with the seared roast. Skim the top of the pot to remove any impurities from the bone cooking out. 
+            Remove the cinnamon stick and discard. Transfer about 1½ - 2 cups of the braising liquid to a bowl. Cover the bowl and refrigerate.</span>
+          </li>
+          <li><span class="stepinfo">Use an immersion blender to blend the remaining pepper and tomato mixture until smooth.</span></li>
+          <li><span class="stepinfo">Return the short ribs, seared beef, and any juices back to the Dutch oven. Add the orange juice, apple cider vinegar, 
+            salt, and pepper to taste. Bring to a simmer, cover, reduce heat to medium-low, and cook for at least 3-4 hours.</span>
+          </li>
+          <li><span class="stepinfo">When the beef is cooked through, remove the short rib bones. Shred the meat with 2 forks.</span></li>
+        </ol>
 
-      <h3 class="component">For the Tacos</h3>
-      <ol>
-        <li><span class="stepinfo">Remove the reserved braising liquid from the refrigerator. Working 1 tortilla at a time, dip the tortilla in the reserved liquid. 
-          Place the tortilla on a large skillet set over medium heat.</span>
-        </li>
-        <li><span class="stepinfo">Top half of the tortilla with 1-2 tablespoons of shredded cheese, 2-3 tablespoons of shredded beef, and a sprinkle of onion and cilantro. 
-          Fold the tortilla in half to close.</span>
-        </li>
-        <li><span class="stepinfo">Cook the tacos for 30-45 seconds on each side until crisp. Transfer to a serving platter and squeeze fresh lime juice over the top.</span></li>
-        <li><span class="stepinfo">Repeat with the remaining tortillas and serve with any remaining braising liquid on the side for dipping.</span></li>
-      </ol>
+        <h3 class="component">For the Tacos</h3>
+        <ol>
+          <li><span class="stepinfo">Remove the reserved braising liquid from the refrigerator. Working 1 tortilla at a time, dip the tortilla in the reserved liquid. 
+            Place the tortilla on a large skillet set over medium heat.</span>
+          </li>
+          <li><span class="stepinfo">Top half of the tortilla with 1-2 tablespoons of shredded cheese, 2-3 tablespoons of shredded beef, and a sprinkle of onion and cilantro. 
+            Fold the tortilla in half to close.</span>
+          </li>
+          <li><span class="stepinfo">Cook the tacos for 30-45 seconds on each side until crisp. Transfer to a serving platter and squeeze fresh lime juice over the top.</span></li>
+          <li><span class="stepinfo">Repeat with the remaining tortillas and serve with any remaining braising liquid on the side for dipping.</span></li>
+        </ol>
+      </div>
     </main>
 
     <footer>
-      <button class="btn btn-secondary">Return to home</button>
     </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js" 
+    integrity="sha384-kenU1KFdBIe4zVF0s0G1M5b4hcpxyD9F7jL+jjXkk+Q2h455rYXK/7HAuoJl+0I4" 
+    crossorigin="anonymous"></script>
   </body>
 </html>
