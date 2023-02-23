@@ -215,7 +215,10 @@ a {
 a.navlink {
     text-decoration: none;
     color: rgb(255, 255, 255);
+}
 
+a.navlink:hover {
+    color:#fff
 }
 
 .button {
