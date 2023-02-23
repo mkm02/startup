@@ -22,22 +22,48 @@
           <a class="navbar-brand" href="#">
             Güero Recipes
           </a>
-          <button type="button" class="btn btn-secondary">About</button>
-          <div class="btn-group">
-            <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Recipes</button>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="Recipes/bbq_pork.html">BBQ Pork Sandwiches</a></li>
-              <li><a class="dropdown-item" href="Recipes/birria_tacos.html">Birria Tacos</a></li>
-              <li><a class="dropdown-item" href="Recipes/chicken_parm.html">Chicken Parmesan Casserole</a></li>
-            </ul>
+          <div class="navtabs">
+            <button type="button" class="btn btn-secondary">About</button>
+            <div class="btn-group">
+              <button type="button" class="btn btn-secondary dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">Recipes</button>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="Recipes/bbq_pork.html">BBQ Pork Sandwiches</a></li>
+                <li><a class="dropdown-item" href="Recipes/birria_tacos.html">Birria Tacos</a></li>
+                <li><a class="dropdown-item" href="Recipes/chicken_parm.html">Chicken Parmesan Casserole</a></li>
+              </ul>
+            </div>
+            <button type="button" class="btn btn-secondary">Login</button>
           </div>
-          <button type="button" class="btn btn-secondary">Login</button>
         </menu>
       </nav>
     </header>
 
     <main>
-      <div class="headimage" id="landingimage"> </div>
+      <div class="homecarousel">
+        <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="pexels-lukas-952478.jpg" class="d-block w-100" alt="Knife on a cutting board surrounded by vegetables">
+            </div>
+            <div class="carousel-item active">
+              <img src="pexels-photo-2403392.jpg" class="d-block w-100" alt="Chef plating food">
+            </div>
+            <div class="carousel-item active">
+              <img src="pexels-photo-1482803.jpg" class="d-block w-100" alt="Chef grilling meat outside">
+            </div>
+          </div>
+          <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+      </div>
+
+      <hr class="solid">
       <div class="recipeheading">Recipes</div>
         
       <div class="homediv">
