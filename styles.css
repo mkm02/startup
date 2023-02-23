@@ -224,3 +224,23 @@ a.navlink {
     border: dotted black 1px;
     border-radius: 3px;
 }
+
+.loginmain {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 100px;
+}
+
+.loginmenu {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    width: 50vw;
+    height: 50vh;
+    justify-content: space-evenly;
+    border: solid black 1px;
+    border-radius: 3px;
+    background-color: rgba(239, 198, 95, 0.568);
+}
