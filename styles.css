@@ -12,6 +12,7 @@ menu {
 
 .navtabs {
     justify-content: flex-end;
+    padding-right: 80px;
 }
 
 main {
