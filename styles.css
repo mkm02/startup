@@ -212,6 +212,12 @@ a {
 
 }
 
+a.navlink {
+    text-decoration: none;
+    color: rgb(255, 255, 255);
+
+}
+
 .button {
     background-color: rgb(233, 233, 233);
     padding: 2px;
