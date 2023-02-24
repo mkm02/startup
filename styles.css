@@ -22,7 +22,6 @@ menu {
 }
 
 main {
-    
     display: flex;
     flex-direction: column;
 }
@@ -70,6 +69,12 @@ main {
     flex: 1;
     justify-content: center;
     align-items: center;
+}
+
+.sidecolumn2 {
+    display: flex;
+    flex: 1;
+    justify-content: center;
 }
 
 @media (max-width: 800px) {
@@ -251,4 +256,8 @@ a.navlink:hover {
     border: solid black 1px;
     border-radius: 3px;
     background-color: rgba(239, 198, 95, 0.568);
+}
+
+.citation {
+    color: darkgray;
 }
