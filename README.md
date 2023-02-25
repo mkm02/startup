@@ -36,3 +36,11 @@ Pushing and pulling in the development environment is incredibly important to do
 NS type of domain record contains information of authoritative name servers that permit me to put records in this DNS server 
 
 While working on the html for Simon, I got more experience using proper syntax to create a table. I also learned than in a form there is an action that can be used. This is a clean way to navigate to a new page without a visible hyperlink. I also began to understand a little bit more about how svg can create more complex images.
+
+In HTML, it is extremely important to structure the website in a clean and organized way. Block elements are what gives the main structure and flow of content, while inline elements work inside of that flow without disrupting it and draw attention.
+
+With HTML and CSS, using containers such as divs are incredibly important to structure as well as style different parts of the webpage, but similar things can be styled the same way without having to duplicate code.
+
+CSS frameworks such as Bootstrap are convenient ways to add styling elements that have already been created.
+
+CSS flex is incredibly useful to make a reactive webpage, and media queries allow for some conditional styles to make sure everything is still visually appealing and functional.
