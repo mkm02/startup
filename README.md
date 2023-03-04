@@ -44,3 +44,15 @@ With HTML and CSS, using containers such as divs are incredibly important to str
 CSS frameworks such as Bootstrap are convenient ways to add styling elements that have already been created.
 
 CSS flex is incredibly useful to make a reactive webpage, and media queries allow for some conditional styles to make sure everything is still visually appealing and functional.
+
+DOM manipulation is an important way to make a reactive web application. Search for something through querySelector and appendChild to add new html elements. You can also delete those elements later.
+
+Be careful about using **.innerHTML** for security purposes.
+
+Make sure to put the link to your .js file at the bottom of the body if it uses anything generated previously in the html.
+
+Async/await and promises are very useful to make sure things happen in the order you need (or happen at all) in a javascript class or function.
+
+It is possible to access variables from one file into another through localStorage.setItem and localStorage.getItem. This allows for a javascript file to be affected by or to work together (sort of) with another javascript file through the browser.
+
+**DON'T FORGET TO DEBUG THROUGH THE BROWSER**
