@@ -268,6 +268,10 @@ a.navlink:hover {
     color:rgba(239, 198, 95, 0.86);
 }
 
+#comments {
+    margin-bottom: 10px;
+}
+
 .comment {
     border: solid rgb(138, 138, 138) 1px;
     border-radius: 10px 10px 0px 10px;
