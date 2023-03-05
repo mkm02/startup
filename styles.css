@@ -261,3 +261,9 @@ a.navlink:hover {
 .citation {
     color: darkgray;
 }
+
+#personalStatement {
+    font-size: large;
+    font-weight: 500;
+    color:rgba(239, 198, 95, 0.86);
+}
