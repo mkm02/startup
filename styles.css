@@ -272,3 +272,14 @@ a.navlink:hover {
     margin: 10px;
     background-color: #ebebeb;
 }
+
+.commentSection {
+    width: 300px;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 400px;
+    min-width: 200px;
+    margin-top: 20px;
+    border: solid rgba(239, 198, 95, 0.568) 5px;
+    border-radius: 3px;
+}
