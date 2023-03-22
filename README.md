@@ -29,7 +29,7 @@ Guero Recipes is the perfect social media platform to find, save, and share rema
 - Public comment sections
 - Copy sharable link to clipboard
 
-***Notes***
+## Notes
 
 Pushing and pulling in the development environment is incredibly important to do **frequently**. It will also require coordination and communication with others to fix merge issues in the workplace.
 
@@ -56,3 +56,11 @@ Async/await and promises are very useful to make sure things happen in the order
 It is possible to access variables from one file into another through localStorage.setItem and localStorage.getItem. This allows for a javascript file to be affected by or to work together (sort of) with another javascript file through the browser.
 
 **DON'T FORGET TO DEBUG THROUGH THE BROWSER**
+
+### Web Services
+
+- npm init -y and npm install * to prepare node package manager and install necessary packages
+- express defines HTTP endpoints and routes
+- middleware allows for functionality in a webservice
+- use fetch to request from other web services
+- daemons allow for persistant web services, even upon closing a terminal
