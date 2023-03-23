@@ -64,3 +64,10 @@ It is possible to access variables from one file into another through localStora
 - middleware allows for functionality in a webservice
 - use fetch to request from other web services
 - daemons allow for persistant web services, even upon closing a terminal
+
+### Database Services
+- install mongodb and require it in a .js file to use it
+- set up a mongo client and connect using a url with credentials saved as environment variables
+- make sure to unset global variables and export them again if necessary
+- databases allow for data to stay persistent, even upon shutdown/restart of a service
+- mongodb is a JSON object oriented database
