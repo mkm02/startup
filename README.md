@@ -29,7 +29,7 @@ Guero Recipes is the perfect social media platform to find, save, and share rema
 - Public comment sections
 - Copy sharable link to clipboard
 
-***Notes***
+## Notes
 
 Pushing and pulling in the development environment is incredibly important to do **frequently**. It will also require coordination and communication with others to fix merge issues in the workplace.
 
@@ -56,3 +56,30 @@ Async/await and promises are very useful to make sure things happen in the order
 It is possible to access variables from one file into another through localStorage.setItem and localStorage.getItem. This allows for a javascript file to be affected by or to work together (sort of) with another javascript file through the browser.
 
 **DON'T FORGET TO DEBUG THROUGH THE BROWSER**
+
+### Web Services
+
+- npm init -y and npm install * to prepare node package manager and install necessary packages
+- express defines HTTP endpoints and routes
+- middleware allows for functionality in a webservice
+- use fetch to request from other web services
+- daemons allow for persistant web services, even upon closing a terminal
+
+### Database Services
+
+- install mongodb and require it in a .js file to use it
+- set up a mongo client and connect using a url with credentials saved as environment variables
+- make sure to unset global variables and export them again if necessary
+- databases allow for data to stay persistent, even upon shutdown/restart of a service
+- mongodb is a JSON object oriented database
+
+## Login Service
+
+- It is smart to design endpoints first, and then implement
+- Helpful to have create user, login, and getMe endpoints
+- Use uuid (Universally Unique Identifier) for a random, unique ID
+- Secure passwords by hashing them using something like bcrypt
+- Cookies hold onto information like authorization tokens that to prevent having to log in over and over again to do anything
+- httpOnly tells browser to not allow JavaScript running on the browser to read the cookie
+- secure requires HTTPS to be used when sending the cookie back to the server
+- sameSite will only return the cookie to the domain that generated it (*no sharing*)
