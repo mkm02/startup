@@ -265,6 +265,26 @@ a.navlink:hover {
     min-width: 3in;
 }
 
+.myLikesMenu {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding-top: 100px;
+}
+
+#myLikesObjects {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-content: space-around;
+    width: 50vw;
+    height: 50vh;
+    justify-content: space-evenly;
+    border: solid black 1px;
+    border-radius: 3px;
+    background-color: rgba(239, 198, 95, 0.568);
+}
+
 .citation {
     color: darkgray;
 }
@@ -307,4 +327,14 @@ a.navlink:hover {
     color: rgb(100, 175, 237);
     font-size: 2em;
     padding: 0.5em;
+}
+
+.liked_image {
+    height: 200px;
+    width: 200px;
+    max-width: 350px;
+    min-width: 100px;
+    overflow: hidden;
+    object-fit:cover;
+    border: solid black 4px;
 }
