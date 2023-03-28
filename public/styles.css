@@ -238,7 +238,7 @@ a.navlink:hover {
     padding-top: 100px;
 }
 
-.loginmenu {
+#loginmenu {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -249,6 +249,20 @@ a.navlink:hover {
     border: solid black 1px;
     border-radius: 3px;
     background-color: rgba(239, 198, 95, 0.568);
+}
+
+#logoutmenu {
+    align-items: center;
+    width: 50vw;
+    height: 50vh;
+    border: solid black 1px;
+    border-radius: 3px;
+    background-color: rgba(239, 198, 95, 0.568);
+    margin-bottom: 20vh;
+    align-content: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    min-width: 3in;
 }
 
 .citation {
@@ -282,4 +296,15 @@ a.navlink:hover {
     margin-top: 20px;
     border: solid rgba(239, 198, 95, 0.568) 5px;
     border-radius: 3px;
+}
+
+#logoutHeader {
+    font-size: 2em;
+    padding: 0.5em;
+}
+
+#loggedUser {
+    color: rgb(100, 175, 237);
+    font-size: 2em;
+    padding: 0.5em;
 }
