@@ -272,7 +272,13 @@ a.navlink:hover {
     padding-top: 100px;
 }
 
-#myLikesObjects {
+.ideaMain {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+
+#myLikesObjects, #ideaMenu {
     display: flex;
     flex-wrap: wrap;
     flex-direction: column;
@@ -283,6 +289,12 @@ a.navlink:hover {
     border: solid black 1px;
     border-radius: 3px;
     background-color: rgba(239, 198, 95, 0.568);
+}
+
+#ideaMenu {
+    min-width: 120px;
+    width:100vw;
+    height: 70vh;
 }
 
 .citation {
@@ -329,7 +341,7 @@ a.navlink:hover {
     padding: 0.5em;
 }
 
-.liked_image {
+.liked_image, #newRecipeImage {
     height: 200px;
     width: 200px;
     max-width: 350px;
@@ -337,4 +349,18 @@ a.navlink:hover {
     overflow: hidden;
     object-fit:cover;
     border: solid black 4px;
+}
+
+#newRecipeImage {
+    height: 300px;
+    width: 300px;
+}
+
+#newRecipe {
+    max-width: 300px;
+    min-width: 100px;
+    text-align: center;
+    color: rgb(100, 175, 237);
+    font-size: 1.5em;
+    padding: 0.5em;
 }
