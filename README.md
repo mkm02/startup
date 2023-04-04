@@ -101,6 +101,9 @@ It is possible to access variables from one file into another through localStora
     4. Remove closed connections
     5. Keep connections alive
 
-JSON.stringify() and JSON.parse() functions are incredibly useful for passing data especially with http
+JSON.stringify() and JSON.parse() functions are incredibly useful for passing data especially with http and MongoDB
+
 Forward messages to self in the server in a live chat to make itlook like more traditional instant messaging
+
 The user collection in MongoDB can also hold an array with information associated with the user
+    - If statements can also be used after you have returned something you found in the database 
