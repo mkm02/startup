@@ -1,3 +1,51 @@
+var wholeChat;
+class Comments {
+    socket;
+
+    constructor() {
+        this.configureWebSocket();
+    }
+
+    addComment() {
+        let userName = localStorage.getItem('userName');
+        //console.log(userName);
+        if (userName === null) {
+            userName = "anonymous";
+        }
+        const newComment = document.getElementById('comments').value;
+        //console.log(newComment);
+        this.broadcastEvent(userName, newComment);
+    }
+
+    configureWebSocket() {
+        const protocol = window.location.protocol === 'http:' ? 'ws' : 'wss';
+        this.socket = new WebSocket(`${protocol}://${window.location.host}/ws`);
+        
+        this.socket.onmessage = async (event) => {
+            console.log('received', event.data);
+            const msg = JSON.parse(await event.data.text());
+            this.displayMsg(msg.from, `${msg.value}`);
+        };
+    }
+
+    displayMsg(from, msg) {
+        const chatText = document.querySelector('#newComments');
+        chatText.innerHTML =
+          `<div class="comment"><span></span> ${from}: ${msg}</div>` + chatText.innerHTML;
+    }
+
+    broadcastEvent(from, value) {
+        const event = {
+          from: from,
+          value: value,
+        };
+        //console.log("in broadcast");
+        this.socket.send(JSON.stringify(event));
+    }
+}
+
+const comments = new Comments();
+
 var commentID = 0;
 
 var allComments = [];
@@ -7,50 +55,12 @@ function createCommentID() {
     return window['value'+commentID] = + commentID;
 }
 
-function addComment() {
-    const commentSectionEl = document.querySelector('.commentSection');
-    const commentEl = document.querySelector('#comments');
-
-    if (commentEl.value != "") {
-        const newCommentEl = document.createElement('div');
-        newCommentEl.setAttribute('class', 'comment');
-        newCommentEl.textContent = commentEl.value;
-        console.log("%s", commentEl.value);
-    
-        commentSectionEl.appendChild(newCommentEl);
-        allComments.push(commentEl.value);
-    }
-
-    
-
-}
-
 function loadComments() {
-    const commentSectionEl = document.querySelector('.commentSection');
-
-    removeAllChildNodes(commentSectionEl);
-
-    for (const [i] of allComments.entries()) {
-        const newCommentEl = document.createElement('div');
-        newCommentEl.setAttribute('class', 'comment');
-        newCommentEl.textContent = allComments[i];
-        commentSectionEl.appendChild(newCommentEl);   
-    }
+    document.querySelector('#newComments').style.display = "block";
 }
 
 function hideComments() {
-    const commentSectionEl = document.querySelector('.commentSection');
-
-    removeAllChildNodes(commentSectionEl);
-}
-
-function removeAllChildNodes(parentSelector) {
-    if (!parentSelector.firstChild) {
-      return;
-    }
-    while (parentSelector.firstChild) {
-      parentSelector.removeChild(parentSelector.firstChild);
-    }
+    document.querySelector('#newComments').style.display = "none";
 }
 
 function likeBBQ() {
