@@ -83,3 +83,20 @@ It is possible to access variables from one file into another through localStora
 - httpOnly tells browser to not allow JavaScript running on the browser to read the cookie
 - secure requires HTTPS to be used when sending the cookie back to the server
 - sameSite will only return the cookie to the domain that generated it (*no sharing*)
+
+## WebSocket Service
+
+- npm install ws
+- Create DOM interaction functions with event listeners
+- Append with var.innerHTML `...` + var.innerHTML
+- Set up websocket
+    1. protocol = window.location.protocol === 'http:' ? 'ws : 'wss'
+    2. socket = new WebSocket(`$protocol}://$window.location.host}/ws`)
+    3. onopen, onclose, onmessage events
+- Set up webservice
+- Set up server
+    1. wss = new WebSocketServer({ noServer: true});
+    2. server.on upgrade -> handleUpgrade -> emit(connection, ws, request);
+    3. Choose who to forward messages to using forEach and connections array
+    4. Remove closed connections
+    5. Keep connections alive
