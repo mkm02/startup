@@ -51,4 +51,47 @@ function removeAllChildNodes(parentSelector) {
     while (parentSelector.firstChild) {
       parentSelector.removeChild(parentSelector.firstChild);
     }
-  }
+}
+
+function likeBBQ() {
+    const userName = localStorage.getItem('userName');
+    const newLike = { user: userName, recipe: "bbq_pork.html" };
+
+    try {
+        sendLike(newLike);
+    } catch {
+        console.log("Failure to like the recipe");
+    }
+}
+
+function likeBirria() {
+    const userName = localStorage.getItem('userName');
+    const newLike = { user: userName, recipe: "birria_tacos.html" };
+
+    try {
+        sendLike(newLike);
+    } catch {
+        console.log("Failure to like the recipe");
+    }
+}
+
+function likeChicken() {
+    const userName = localStorage.getItem('userName');
+    const newLike = { user: userName, recipe: "chicken_parm.html" };
+
+    try {
+        sendLike(newLike);
+    } catch {
+        console.log("Failure to like the recipe");
+    }
+}
+
+async function sendLike(like) {
+    console.log("sending like");
+    const response = await fetch('/api/like', {
+        method: 'POST',
+        headers: { 'content-type': 'application/json' },
+        body: JSON.stringify(like),
+    });
+    console.log(response);
+}

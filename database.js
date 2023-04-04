@@ -15,7 +15,6 @@ const url = `mongodb+srv://${userName}:${password}@${hostname}`;
 const client = new MongoClient(url);
 
 const userCollection = client.db('recipes').collection('users');
-const scoreCollection = client.db('recipes').collection('recipes');
 
 function getUser(user) {
     return userCollection.findOne({ user: user });
@@ -32,14 +31,47 @@ async function createUser(user, password) {
       user: user,
       password: passwordHash,
       token: uuid.v4(),
+      likes: [],
     };
     await userCollection.insertOne(newUser);
   
     return user;
 }
 
+function addLikedRecipe(like) {
+  userCollection.updateOne(
+    { "user": like.user },
+    { $push: { "likes": like.recipe } }
+  );
+}
+
+function removeLikedRecipe(like) {
+  userCollection.updateOne(
+    {"user": like.user},
+    { $pull: {"likes": like.recipe} }
+  );
+}
+
+function findLikedRecipe(like) {
+  return userCollection.findOne(
+    { "user": like.user },
+    { "likes": like.recipe }
+  );
+}
+
+function findAllLikedRecipes(like) {
+  return userCollection.findOne(
+    { "user": like.user },
+  );
+}
+
+
 module.exports = {
     getUser,
     getUserByToken,
     createUser,
+    addLikedRecipe,
+    removeLikedRecipe,
+    findLikedRecipe,
+    findAllLikedRecipes,
 };

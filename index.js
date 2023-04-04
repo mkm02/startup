@@ -59,6 +59,30 @@ apiRouter.get('/user/:user', async (req, res) => {
 var secureApiRouter = express.Router();
 apiRouter.use(secureApiRouter);
 
+secureApiRouter.post('/like', async(req,res) => {
+   let response;
+  try {
+    response = await DB.findLikedRecipe(req.body);
+    array = response.likes
+    if (array.includes(req.body.recipe)) {
+      response = await DB.removeLikedRecipe(req.body)
+    } else {
+      response = await DB.addLikedRecipe(req.body);
+    }
+    res.send({ response });
+  }
+  catch {
+    console.log("Error");
+  }
+});
+
+secureApiRouter.post('/mylikes', async(req,res) => {
+  const user = await DB.findAllLikedRecipes(req.body);
+  array = user.likes;
+  //console.log(array);
+  jsonArray = JSON.stringify(array);
+  res.send(jsonArray);
+});
 
 app.use(function (err, req, res, next) {
     res.status(500).send({ type: err.name, message: err.message });
