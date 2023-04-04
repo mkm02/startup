@@ -100,3 +100,7 @@ It is possible to access variables from one file into another through localStora
     3. Choose who to forward messages to using forEach and connections array
     4. Remove closed connections
     5. Keep connections alive
+
+JSON.stringify() and JSON.parse() functions are incredibly useful for passing data especially with http
+Forward messages to self in the server in a live chat to make itlook like more traditional instant messaging
+The user collection in MongoDB can also hold an array with information associated with the user
