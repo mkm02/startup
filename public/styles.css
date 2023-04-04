@@ -356,11 +356,30 @@ a.navlink:hover {
     width: 300px;
 }
 
-#newRecipe {
+#newRecipe, .myLikes {
     max-width: 300px;
     min-width: 100px;
     text-align: center;
     color: rgb(100, 175, 237);
     font-size: 1.5em;
     padding: 0.5em;
+}
+
+.myLikes {
+    font-size: 1.5em;
+    color: #0d6efd;
+    text-decoration: none;
+}
+
+.myLikes:hover {
+    text-decoration: underline dotted;
+}
+
+#likesHeader {
+    text-align: center;
+    font-size: 3.0em;
+    font-weight: 500;
+    border: solid red 5px;
+    padding: 20px;
+    border-radius: 3px;
 }

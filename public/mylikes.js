@@ -24,6 +24,7 @@
         link1Name = link1Name.toUpperCase();
 
         like1El.textContent = link1Name;
+        like1El.className = "myLikes";
         like1El.href = link1;
 
         document.getElementById("myLikesObjects").appendChild(like1El);
@@ -35,6 +36,7 @@
             link2Name = link2Name.toUpperCase();
 
             like2El.textContent = link2Name;
+            like2El.className = "myLikes";
             like2El.href = link2;
 
             document.getElementById("myLikesObjects").appendChild(like2El);
@@ -46,11 +48,23 @@
                 link3Name = link3Name.toUpperCase();
 
                 like3El.textContent = link3Name;
+                like3El.className = "myLikes";
                 like3El.href = link3;
 
                 document.getElementById("myLikesObjects").appendChild(like3El);
             }
         }
+    } else {
+        const noLikesEl1 = document.createElement('div');
+        noLikesEl1.className = "myLikes";
+        noLikesEl1.textContent = "You have no liked recipes!";
+
+        const noLikesEl2 = document.createElement('div');
+        noLikesEl2.className = "myLikes";
+        noLikesEl2.textContent = "Find one you like and hit the Like button!";
+
+        document.getElementById("myLikesObjects").appendChild(noLikesEl1);
+        document.getElementById("myLikesObjects").appendChild(noLikesEl2);
     }
     //like4El.className = "liked_image";
     //like4El.src = "Recipes/images/birria-tacos.jpg"
