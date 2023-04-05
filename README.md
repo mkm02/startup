@@ -57,7 +57,7 @@ It is possible to access variables from one file into another through localStora
 
 **DON'T FORGET TO DEBUG THROUGH THE BROWSER**
 
-### Web Services
+## Web Services
 
 - npm init -y and npm install * to prepare node package manager and install necessary packages
 - express defines HTTP endpoints and routes
@@ -65,7 +65,7 @@ It is possible to access variables from one file into another through localStora
 - use fetch to request from other web services
 - daemons allow for persistant web services, even upon closing a terminal
 
-### Database Services
+## Database Services
 
 - install mongodb and require it in a .js file to use it
 - set up a mongo client and connect using a url with credentials saved as environment variables
@@ -107,3 +107,12 @@ Forward messages to self in the server in a live chat to make itlook like more t
 
 The user collection in MongoDB can also hold an array with information associated with the user
     - If statements can also be used after you have returned something you found in the database 
+    
+## React CLI
+
+- npx is like a shortcut for npm install and npm start, but the package installation isn't persistent
+- the toolchain executes the start script found in the package.json
+- index.html is initially very barren and gets filled up because of the js file that renders the component loaded from the component's .js file
+- npm run build executes the build script in package.json
+  - The script transpiles, minifies, and injects the proper JavaScript, then outputs to a deployment ready version into a subdirectory named `build`
+  - The deployment scripts for Simon React use this and then copy the new subdirectory `build` out to the production server
