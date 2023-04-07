@@ -116,3 +116,18 @@ The user collection in MongoDB can also hold an array with information associate
 - npm run build executes the build script in package.json
   - The script transpiles, minifies, and injects the proper JavaScript, then outputs to a deployment ready version into a subdirectory named `build`
   - The deployment scripts for Simon React use this and then copy the new subdirectory `build` out to the production server
+  
+## React Simon
+
+- Copy HTML and put in return value of component
+- Use className in HTML for components so we don't use JS keyword class
+- Stub out different view components
+- Associate NavLink to's to Route paths with react-router-dom
+- Routes can be nested if needed
+- Copy Javascript and turn functions into inner functions of the compnents
+- Don't forget to import CSS files!
+- Create React state variables for objects that make sense to have states
+- Replace DOM query selectors with React state variables ^^^
+- Child components may be necessary
+- Don't be afraid to move things around as necessary, more components can actually be simpler than shoving everything into one
+- Add websocket into a "notifier.js" file to broadcast events
